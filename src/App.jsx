@@ -62,6 +62,14 @@ const App = () => {
     return () => links.forEach((link) => link.removeEventListener("click", handleClick));
   }, [menuOpen]);
 
+    useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [menuOpen]);
+
     const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -125,10 +133,11 @@ const App = () => {
       )}
 
       <section id="home">
-        <h2 style={{ color: 'white', fontWeight: '700', fontSize: '48px' }}>
+        <div className="typing-section">
+        <h2 className="typed-wrapper">
           <ReactTyped
             strings={[
-              "Hi, I'm Guruvali Gnaneshwar",
+              "Hi, I'm Gnaneshwar Guruvali",
               "Full-stack developer specializing in web and AI.",
               "Building modern apps and intelligent tools.",
               "Always learning, always building something new."
@@ -142,6 +151,7 @@ const App = () => {
             loop
           />
         </h2>
+        </div>
        <p>
         Full-Stack Developer with 2+ years of experience delivering scalable web solutions and integrating AI capabilities to enhance user experiences.
       </p>
