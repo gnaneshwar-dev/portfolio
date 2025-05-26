@@ -324,7 +324,7 @@ a:focus {
   margin: 0 auto 24px;
   font-size: 19px;
   line-height: 1.7;
-  color: #444;
+  /* color: #444; */
   user-select: text;
   opacity: 0.95;
 }
@@ -382,7 +382,7 @@ a:focus {
 .project-card p,
 .project-card ul {
   font-size: 16px;
-  color: #444;
+  /* color: #444; */
   line-height: 1.7;
 }
 
@@ -400,7 +400,7 @@ a:focus {
   font-size: 18px;
   margin: 18px 0;
   user-select: text;
-  color: #333;
+  /* color: #333; */
   transition: color 0.3s ease;
 }
 #contact a:hover,
